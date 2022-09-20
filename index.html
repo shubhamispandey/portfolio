@@ -1,396 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/mystyle.css">
-    <link rel="stylesheet" href="scroll/scroll.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins&family=Prata&family=Roboto&display=swap&"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5dbe99caa8.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-32x32.png">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins&family=Prata&family=Roboto&display=swap&"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="scroll/scroll.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mystyle.css" />
 
+    <title>Shubham Pandey | Web Developer</title>
+  </head>
 
-    <title>Particle Js</title>
-</head>
-
-<body>
+  <body>
     <div class="loader">
-        <section class="talign-center">
-            <div class="spinner icon-spinner-5" aria-hidden="true"></div>
-        </section>
+      <section>
+        <div class="spinner icon-spinner-5" aria-hidden="true"></div>
+      </section>
     </div>
 
     <div class="intro">
-        <div class="intro-text">
-            <h1 class="hide">
-                <span class="text">Creating inovation</span>
-            </h1>
-            <h1 class="hide">
-                <span class="text">For Everyday</span>
-            </h1>
-            <h1 class="hide">
-                <span class="text">People.</span>
-            </h1>
-        </div>
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Creating inovation</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">For Everyday</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">People.</span>
+        </h1>
+      </div>
     </div>
     <div class="slider"></div>
     <div class="parent">
-        <div id="particles-js" class="particles-js"></div>
-        <!-- navigation mobile -->
-        <div>
-            <div class="nav-mobile">
-                <nav class="menu">
-                    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-                    <label class="menu-open-button" for="menu-open">
-                        <span class="hamburger hamburger-1"></span>
-                        <span class="hamburger hamburger-2"></span>
-                        <span class="hamburger hamburger-3"></span>
-                    </label>
+      <div id="particles-js" class="particles-js"></div>
+      <!-- navigation mobile -->
+      <div>
+        <div class="nav-mobile">
+          <nav class="menu">
+            <input
+              type="checkbox"
+              class="menu-open"
+              name="menu-open"
+              id="menu-open"
+            />
+            <label class="menu-open-button" for="menu-open">
+              <span class="hamburger hamburger-1"></span>
+              <span class="hamburger hamburger-2"></span>
+              <span class="hamburger hamburger-3"></span>
+            </label>
 
-                    <a href="/#home" class="menu-item"> <i class="fas fa-home"></i></a>
-                    <a href="/#about" class="menu-item"> <i class="far fa-user"></i> </a>
-                    <a href="/#portfolio" class="menu-item"> <i class="fas fa-laptop-code"></i></a>
-                    <a href="/#contact" class="menu-item"> <i class="far fa-envelope"></i> </a>
-                </nav>
+            <a href="/#home" class="menu-item"> <i class="fas fa-home"></i></a>
+            <a href="/#about" class="menu-item">
+              <i class="far fa-user"></i>
+            </a>
+            <a href="/#portfolio" class="menu-item">
+              <i class="fas fa-laptop-code"></i
+            ></a>
+            <a href="/#contact" class="menu-item">
+              <i class="far fa-envelope"></i>
+            </a>
+          </nav>
 
-                <svg class="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                    <defs>
-                        <filter id="shadowed-goo">
-
-                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                                result="goo" />
-                            <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-                            <feColorMatrix in="shadow" mode="matrix"
-                                values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-                            <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-                            <feComposite in2="shadow" in="goo" result="goo" />
-                            <feComposite in2="goo" in="SourceGraphic" result="mix" />
-                        </filter>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                                result="goo" />
-                            <feComposite in2="goo" in="SourceGraphic" result="mix" />
-                        </filter>
-                    </defs>
-                </svg>
-            </div>
-
-            <nav>
-                <div class="nav">
-                    <div class="row">
-                        <div class="col-9 row">
-                            <div class="col-auto">
-                                <button class="btn btn__menu"">
-                                    <div class=" inner"></div>
-                            </button>
-                        </div>
-                        <div class="col-11 nav__dropdown">
-                            <ul class="nav__list">
-                                <li class="nav__item col-4"><a href="/#home">home</a></li>
-                                <li class="nav__item col-4"><a href="/#about">about</a></li>
-                                <li class="nav__item col-4"><a href="/#portfolio">Projects</a></li>
-                                <li class="nav__item col-4"><a href="/#contact">contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="shadowed-goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  result="blur"
+                  stdDeviation="10"
+                />
+                <feColorMatrix
+                  in="blur"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  result="goo"
+                />
+                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                <feColorMatrix
+                  in="shadow"
+                  values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+                  result="shadow"
+                />
+                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                <feComposite in2="shadow" in="goo" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+              </filter>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  result="blur"
+                  stdDeviation="10"
+                />
+                <feColorMatrix
+                  in="blur"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  result="goo"
+                />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+              </filter>
+            </defs>
+          </svg>
         </div>
+
+        <nav>
+          <div class="nav">
+            <div class="row">
+              <div class="col-9 row">
+                <div class="col-auto">
+                  <button class="btn btn__menu">
+                    <span class="inner"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-11 nav__dropdown">
+                <ul class="nav__list">
+                  <li class="nav__item col-4"><a href="/#home">home</a></li>
+                  <li class="nav__item col-4"><a href="/#about">about</a></li>
+                  <li class="nav__item col-4">
+                    <a href="/#portfolio">Projects</a>
+                  </li>
+                  <li class="nav__item col-4">
+                    <a href="/#contact">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
 
     <!-- header -->
     <header class="header-section section offcanvas__wrap" id="home">
-        <div class="wrapper">
-            <div class="header">
-                <div class="col col-5">
-                    <div>
-                        <h1>Hi I'm <span class="title-name">Shubham</span>!</h1>
-                    </div>
-                    <div class="header__icons row">
-                        <ul class="header__list row">
-                            <li class="header__item col-auto">
-                                <a href="https://www.linkedin.com/in/shubham-pandey-5172281b2/" target="_blank"
-                                    rel="noreferrer noopener"><i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                            <li class="header__item col-auto">
-                                <a href="https://github.com/shubhamispandey" target="_blank"
-                                    rel="noreferrer noopener"><i class="fab fa-github"></i>
-                                </a>
-                            </li>
-                            <li class="header__item col-auto">
-                                <a href="https://twitter.com/shubham_057" target="_blank" rel="noreferrer noopener"><i
-                                        class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="scroll-type1"></div>
+      <div class="wrapper">
+        <div class="header">
+          <div class="col col-5">
+            <div>
+              <h1>Hi I'm <span class="title-name">Shubham</span>!</h1>
             </div>
+            <div class="header__icons row">
+              <ul class="header__list row">
+                <li class="header__item col-auto">
+                  <a
+                    href="https://www.linkedin.com/in/shubham-pandey-5172281b2/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="header__item col-auto">
+                  <a
+                    href="https://github.com/shubhamispandey"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="header__item col-auto">
+                  <a
+                    href="https://twitter.com/shubham_057"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="scroll-type1"></div>
         </div>
+      </div>
+      <div class="header_resume">
+        <a
+          href="https://drive.google.com/file/d/1j0CZVpXzFgQ6T1oQPsHkKp9Dw9Ot8XVf/view?usp=sharing"
+          ><i class="fa-solid fa-circle-chevron-left"></i> View my resume
+        </a>
+      </div>
     </header>
 
     <button class="btn btn__contact">
-        <span class="scroll__hint scroll__hint--right">contact</span>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="214px">
-            <path fill-rule="evenodd" fill="#2B3C51"
-                d="M37.986,141.782 C17.296,118.013 20.556,127.799 10.392,121.783 C10.332,152.499 7.895,183.560 9.599,214.014 C12.523,199.744 11.775,178.588 15.277,164.938 C18.466,150.582 25.904,143.732 37.986,141.782 L37.986,141.782 Z" />
-            <path fill-rule="evenodd" fill="#2B3C51"
-                d="M37.580,72.194 C16.845,95.955 20.111,86.172 9.926,92.187 C9.866,61.480 7.424,30.430 9.131,-0.014 C12.062,14.250 11.312,35.400 14.822,49.046 C18.018,63.397 25.472,70.245 37.580,72.194 L37.580,72.194 Z" />
-            <path fill-rule="evenodd" fill="#2B3C51"
-                d="M40.000,72.000 C62.091,72.000 80.000,87.670 80.000,107.000 C80.000,126.330 62.091,142.000 40.000,142.000 C17.909,142.000 0.000,126.330 0.000,107.000 C0.000,87.670 17.909,72.000 40.000,72.000 Z" />
-        </svg>
+      <span class="scroll__hint scroll__hint--right">contact</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="80px"
+        height="214px"
+      >
+        <path
+          fill-rule="evenodd"
+          fill="#2B3C51"
+          d="M37.986,141.782 C17.296,118.013 20.556,127.799 10.392,121.783 C10.332,152.499 7.895,183.560 9.599,214.014 C12.523,199.744 11.775,178.588 15.277,164.938 C18.466,150.582 25.904,143.732 37.986,141.782 L37.986,141.782 Z"
+        />
+        <path
+          fill-rule="evenodd"
+          fill="#2B3C51"
+          d="M37.580,72.194 C16.845,95.955 20.111,86.172 9.926,92.187 C9.866,61.480 7.424,30.430 9.131,-0.014 C12.062,14.250 11.312,35.400 14.822,49.046 C18.018,63.397 25.472,70.245 37.580,72.194 L37.580,72.194 Z"
+        />
+        <path
+          fill-rule="evenodd"
+          fill="#2B3C51"
+          d="M40.000,72.000 C62.091,72.000 80.000,87.670 80.000,107.000 C80.000,126.330 62.091,142.000 40.000,142.000 C17.909,142.000 0.000,126.330 0.000,107.000 C0.000,87.670 17.909,72.000 40.000,72.000 Z"
+        />
+      </svg>
     </button>
 
     <button class="btn btn__about">
-        <span class="scroll__hint scroll__hint--left">About</span>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px">
-            <path fill-rule="evenodd" fill="#2B3C51"
-                d="M40.000,-0.000 C62.091,-0.000 80.000,17.909 80.000,40.000 C80.000,62.091 62.091,80.000 40.000,80.000 C17.909,80.000 -0.000,62.091 -0.000,40.000 C-0.000,17.909 17.909,-0.000 40.000,-0.000 Z" />
-        </svg>
+      <span class="scroll__hint scroll__hint--left">About</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="80px"
+        height="80px"
+      >
+        <path
+          fill-rule="evenodd"
+          fill="#2B3C51"
+          d="M40.000,-0.000 C62.091,-0.000 80.000,17.909 80.000,40.000 C80.000,62.091 62.091,80.000 40.000,80.000 C17.909,80.000 -0.000,62.091 -0.000,40.000 C-0.000,17.909 17.909,-0.000 40.000,-0.000 Z"
+        />
+      </svg>
     </button>
 
-
     <main>
-        <section class="section" id="about" data-letter="Experience">
-            <div class="wrapper">
-                <div class="about">
-                    <div class="row row--column">
-                        <div class="col-8 about__profile" data-aos="fade-right" data-aos-duration="1500">
-                            <div class="about__intro">
-                                <h2>About Me</h2>
-                                <div class="row">
-                                    <div class="profile-image col-3">
-                                        <img src="man.svg" alt="">
-                                    </div>
-                                    <div class="col-9">
-                                        <p>
-                                            I'm Shubham, An undergrad student at IIIT Kottayam. I love to compose code and I would be able to prototype any sort of design I get or I Visualize.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about__skills">
-                                <h2>Skills</h2>
-                                <ul class="row about__skills__list">
-
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/006-html.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/005-css.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/007-js.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/jquery.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/004-bootstrap.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/008-sass.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/009-react.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/013-php.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/mysql.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/012-wordpress.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/010-responsive.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/npm.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/c++.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/011-command-window.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/001-github.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/002-gitlab.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/014-adobe-illustrator.png" alt="">
-                                    </li>
-                                    <li class="col-2 skill-item" data-aos="zoom-in" data-aos-duration="3000">
-                                        <img src="./assets/skills/015-adobe-photoshop.png" alt="">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-4 about__personal" data-aos="fade-left" data-aos-duration="1500">
-                            <div class="about__courses">
-                                <h3>About Me</h3>
-                                <ul class="courses__list">
-                                    <li class="courses__item row">
-                                        <div class="col-2">
-                                            <i class="fas fa-laptop"></i>
-                                        </div>
-                                        <div class="col-10">
-                                            <a href="#" target="_blank" rel="noreferrer noopener">Web
-                                                Development:<br><br>
-                                                I build user-friendly web designs.<br>
-                                                we also create fully responsive and dynamic websites.</a>
-                                        </div>
-                                    </li>
-                                    <li class="courses__item row">
-                                        <div class="col-2">
-                                            <i class="fas fa-laptop"></i>
-                                        </div>
-                                        <div class="col-10">
-                                            <a href="https://frontendmasters.com/courses/js-fundamentals-to-functional/"
-                                                target="_blank" rel="noreferrer noopener">CMS:<br><br>
-                                                I am also familiar building different types of CMS for industry Applications.
-                                            </a>
-                                        </div>
-
-                                    </li>
-                                    <li class="courses__item row">
-                                        <div class="col-2">
-                                            <i class="fas fa-laptop"></i>
-                                        </div>
-                                        <div class="col-10">
-                                            <a href="https://beginnerjavascript.com/" target="_blank"
-                                                rel="noreferrer noopener">UI Design<br><br>
-                                                I make an intuitive user interface.
-                                                we make sure that the elements of UI design are very much clear.
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </div>
+      <section class="section" id="about" data-letter="Experience">
+        <div class="wrapper">
+          <div class="about">
+            <div class="row row--column">
+              <div
+                class="col-8 about__profile"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
+                <div class="about__intro">
+                  <h2>About Me</h2>
+                  <div class="row">
+                    <div class="profile-image col-3">
+                      <img src="./assets/shubham.svg" alt="" />
                     </div>
+                    <div class="col-9">
+                      <p>
+                        I'm Shubham, An undergrad student at IIIT Kottayam. I
+                        love to compose code and I would be able to prototype
+                        any sort of design I get or I Visualize.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section class="section" id="portfolio" data-letter="Projects">
-            <div class="portfolio">
-                <div class="wrapper">
-                    <h2 class="section-title">Projects</h2>
-                    <p class="portfolio__description">Below you can see some projects We've been working on lately.</p>
-                    <ul class="portfolio__list row">
-                        <li class="portfolio__item col-4" data-aos="zoom-in" data-aos-duration="1500">
-                            <div class="image__container">
-                                <img src="assets/natours.JPG" alt="">
-                                <a target="_blank"
-                                    rel="noreferrer noopener">
-                                    <div class="overlay">
-                                        <div class="overlay__title">
-                                            <i class="fas fa-chevron-circle-right"></i>
-                                            <h3>Natours <span>(advanced site)</span></h3>
-                                        </div>
-                                        <p> Natours site is the advanced site created with love for the nature </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="portfolio__item col-4" data-aos="zoom-in" data-aos-duration="1500">
-                            <div class="image__container">
-                                <img src="./assets/trillo.JPG" alt="">
-                                <a target="_blank"
-                                    rel="noreferrer noopener">
-                                    <div class="overlay">
-                                        <div class="overlay__title">
-                                            <i class="fas fa-chevron-circle-right"></i>
-                                            <h3>Trillo <span>(Hotel Booking)</span></h3>
-                                        </div>
-                                        <p> Trillo Project is a Hotel Booking website Design. </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
+                <div class="about__skills">
+                  <h2>Skills</h2>
+                  <ul class="row about__skills__list">
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/006-html.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/005-css.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/007-js.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/jquery.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/004-bootstrap.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/008-sass.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/009-react.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/013-php.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/mysql.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/012-wordpress.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/010-responsive.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/npm.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/c++.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img
+                        src="./assets/skills/011-command-window.png"
+                        alt=""
+                      />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/001-github.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img src="./assets/skills/002-gitlab.png" alt="" />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img
+                        src="./assets/skills/014-adobe-illustrator.png"
+                        alt=""
+                      />
+                    </li>
+                    <li
+                      class="col-2 skill-item"
+                      data-aos="zoom-in"
+                      data-aos-duration="3000"
+                    >
+                      <img
+                        src="./assets/skills/015-adobe-photoshop.png"
+                        alt=""
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                        <li class="portfolio__item col-4" data-aos="zoom-in" data-aos-duration="1500">
-                            <div class="image__container">
-                                <img src="./assets/food.JPG" alt="">
-                                <a target="_blank"
-                                    rel="noreferrer noopener">
-                                    <div class="overlay">
-                                        <div class="overlay__title">
-                                            <i class="fas fa-chevron-circle-right"></i>
-                                            <h3>Food delivery App</h3>
-                                        </div>
-                                        <p> Food delivery design </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <br>
-                    <p>View Repository Codes</p>
-                    <a href="https://github.com/shubhamispandey" style="color: black;">https://github.com/shubhamispandey</a>
+              <div
+                class="col-4 about__personal"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
+                <div class="about__courses">
+                  <h3>About Me</h3>
+                  <ul class="courses__list">
+                    <p>
+                      I’m also a front-end developer and general doodler with a
+                      keen eye for creating engaging UI, bringing products to
+                      life.
+                    </p>
+                    <p>
+                      I’ve spent the past 2+ years working across different
+                      areas of digital design.
+                    </p>
+                    <p>
+                      eg: front-end development, Graphic design, UI/UX, to my
+                      current role designing products for web platforms.
+                    </p>
+                  </ul>
+                  <div class="exp">
+                    <h2>Experience</h2>
+                    <div class="exp__item">
+                      <div class="exp__item-desc">
+                        <h3>BSS</h3>
+                        <p>May 2021 - May 2022</p>
+                      </div>
+                      <p class="exp__item-role">React Js Developer</p>
+                    </div>
+                    <div class="exp__item">
+                      <div class="exp__item-desc">
+                        <h3>PrepMaestro</h3>
+                        <p>Feb 2022 - Aug 2022</p>
+                      </div>
+                      <p class="exp__item-role">Front End Developer</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="portfolio" data-letter="Projects">
+        <div class="portfolio">
+          <div class="wrapper">
+            <h2 class="section-title">Projects</h2>
+            <p class="portfolio__description">
+              Below you can see some projects We've been working on lately.
+            </p>
+            <ul class="portfolio__list row">
+              <li
+                class="portfolio__item col-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              >
+                <div class="image__container">
+                  <img src="assets/project/TravelAdvisory.png" alt="" />
+                  <div>
+                    <div class="overlay">
+                      <div class="overlay__title">
+                        <i class="fas fa-chevron-circle-right"></i>
+                        <h3>Travel Advisory <span>(Hotels)</span></h3>
+                      </div>
+                      <p>
+                        This project is a react application built by using
+                        Travel Advisory Api from RapidApi and Google Map Api
+                        from Google Cloud
+                      </p>
+                      <a
+                        href="https://github.com/shubhamispandey/React-Travel-Advisory"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="portfolio__item col-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              >
+                <div class="image__container">
+                  <img src="assets/project/Crypto.png" alt="" />
+                  <div>
+                    <div class="overlay">
+                      <div class="overlay__title">
+                        <i class="fas fa-chevron-circle-right"></i>
+                        <h3>CryptoVerse <span>(crypto currencies)</span></h3>
+                      </div>
+                      <p>
+                        CryptoVerse is a free application which shows the latest
+                        crypto currency and crypto news
+                      </p>
+                      <a href="https://github.com/shubhamispandey/CryptoVerse"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="portfolio__item col-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              >
+                <div class="image__container">
+                  <img src="./assets/project/weather.png" alt="" />
+                  <div>
+                    <div class="overlay">
+                      <div class="overlay__title">
+                        <i class="fas fa-chevron-circle-right"></i>
+                        <h3>Weather <span>(Search Weather)</span></h3>
+                      </div>
+                      <p>Search for the weather of different cities</p>
+                      <a
+                        href="https://github.com/shubhamispandey/React-weather-app"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="portfolio__item col-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              >
+                <div class="image__container">
+                  <img src="assets/project/natours.JPG" alt="" />
+                  <div>
+                    <div class="overlay">
+                      <div class="overlay__title">
+                        <i class="fas fa-chevron-circle-right"></i>
+                        <h3>Natours <span>(advanced site)</span></h3>
+                      </div>
+                      <p>
+                        Natours site is the advanced site created with love for
+                        the nature
+                      </p>
+                      <a
+                        href="https://github.com/shubhamispandey/natoursadvancewebsite"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="portfolio__item col-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              >
+                <div class="image__container">
+                  <img src="./assets/project/trillo.JPG" alt="" />
+                  <div>
+                    <div class="overlay">
+                      <div class="overlay__title">
+                        <i class="fas fa-chevron-circle-right"></i>
+                        <h3>Trillo <span>(Hotel Booking)</span></h3>
+                      </div>
+                      <p>Trillo Project is a Hotel Booking website Design.</p>
+                      <a href="https://github.com/shubhamispandey/trillo"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="portfolio__item col-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              >
+                <div class="image__container">
+                  <img src="./assets/project/food.JPG" alt="" />
+                  <div>
+                    <div class="overlay">
+                      <div class="overlay__title">
+                        <i class="fas fa-chevron-circle-right"></i>
+                        <h3>Food delivery App</h3>
+                      </div>
+                      <p>Food delivery design</p>
+                      <a href="https://github.com/shubhamispandey/Food-express"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a
+              href="https://github.com/shubhamispandey"
+              style="color: lightcoral; font-weight: 600"
+              >View All <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="footer">
-        <div class="add-margin">
-            <div class="footer" id="contact">
-                <div class="row row--column">
-                    <div class="container col-12 ">
-                        <div class="footer__title">
-                            <h2 class="col-auto">Contact</h2>
-                            <button type="button" class="col-auto btn btn__circle"><i class="fas fa-times"></i></button>
-                        </div>
-                        <form action="mailto:shubhamtechnews@gmail.com" method="post" enctype="text/plain">
-                            <input class="input__name" type="text" name="name" id="name" placeholder="Name" required>
-                            <input class="input__name" type="email" name="email" id="email" placeholder="E-mail"
-                                required>
-                            <textarea name="massage" placeholder="Message"></textarea>
-                            <input class="btn btn__send" type="submit" value="send"></input>
-                        </form>
-                    </div>
-                    <div class="col-12">
-                        <p class="copyright">&copy; 2020 Shubham Pandey | All Rights Reserved</p>
-                    </div>
-                </div>
+      <div class="add-margin">
+        <div class="footer" id="contact">
+          <div class="row row--column">
+            <div class="container col-12">
+              <div class="footer__title">
+                <h2 class="col-auto">Contact</h2>
+                <button type="button" class="col-auto btn btn__circle">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <form
+                action="mailto:shubhamtechnews@gmail.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <input
+                  class="input__name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  class="input__name"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                  required
+                />
+                <textarea name="massage" placeholder="Message"></textarea>
+                <input class="btn btn__send" type="submit" value="send" />
+              </form>
             </div>
+            <div class="col-12">
+              <p class="copyright">
+                &copy; 2020 Shubham Pandey | All Rights Reserved
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <p class="copyright copyright--2">&copy; 2020 Shubham Pandey | All Rights Reserved</p>
+      <p class="copyright copyright--2">
+        &copy; 2020 Shubham Pandey | All Rights Reserved
+      </p>
     </footer>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/app.js"></script>
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <script></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="scroll/index.js" type="module"></script>
-</body>
-
+  </body>
 </html>
