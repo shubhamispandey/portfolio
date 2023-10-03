@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta
+      name="description"
+      content="Shubham Pandey - Web Developer Portfolio"
+    />
+    <meta
+      name="keywords"
+      content="web developer, portfolio, projects, Shubham Pandey"
+    />
+    <meta name="author" content="Shubham Pandey" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://s3.amazonaws.com" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins&family=Prata&family=Roboto&display=swap&"
       rel="stylesheet"
@@ -20,7 +33,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="scroll/scroll.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/mystyle.css" />
 
@@ -66,14 +78,32 @@
               <span class="hamburger hamburger-3"></span>
             </label>
 
-            <a href="/#home" class="menu-item"> <i class="fas fa-home"></i></a>
-            <a href="/#about" class="menu-item">
+            <a
+              aria-label="Visit menu-item-home"
+              href="/#home"
+              class="menu-item"
+            >
+              <i class="fas fa-home"></i
+            ></a>
+            <a
+              aria-label="Visit menu-item-about"
+              href="/#about"
+              class="menu-item"
+            >
               <i class="far fa-user"></i>
             </a>
-            <a href="/#portfolio" class="menu-item">
+            <a
+              aria-label="Visit menu-item-portfolio"
+              href="/#portfolio"
+              class="menu-item"
+            >
               <i class="fas fa-laptop-code"></i
             ></a>
-            <a href="/#contact" class="menu-item">
+            <a
+              aria-label="Visit menu-item-contact"
+              href="/#contact"
+              class="menu-item"
+            >
               <i class="far fa-envelope"></i>
             </a>
           </nav>
@@ -123,20 +153,30 @@
             <div class="row">
               <div class="col-9 row">
                 <div class="col-auto">
-                  <button class="btn btn__menu">
+                  <button class="btn btn__menu" aria-label="Menu">
                     <span class="inner"></span>
                   </button>
                 </div>
               </div>
               <div class="col-11 nav__dropdown">
                 <ul class="nav__list">
-                  <li class="nav__item col-4"><a href="/#home">home</a></li>
-                  <li class="nav__item col-4"><a href="/#about">about</a></li>
                   <li class="nav__item col-4">
-                    <a href="/#portfolio">Projects</a>
+                    <a aria-label="Visit menu-item-home" href="/#home">home</a>
                   </li>
                   <li class="nav__item col-4">
-                    <a href="/#contact">contact</a>
+                    <a aria-label="Visit menu-item-about" href="/#about"
+                      >about</a
+                    >
+                  </li>
+                  <li class="nav__item col-4">
+                    <a aria-label="Visit menu-item-portfolio" href="/#portfolio"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="nav__item col-4">
+                    <a aria-label="Visit menu-item-contact" href="/#contact"
+                      >contact</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -158,6 +198,7 @@
               <ul class="header__list row">
                 <li class="header__item col-auto">
                   <a
+                    aria-label="Visit linkedin profile"
                     href="https://www.linkedin.com/in/shubham-pandey-5172281b2/"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -166,6 +207,7 @@
                 </li>
                 <li class="header__item col-auto">
                   <a
+                    aria-label="Visit github profile"
                     href="https://github.com/shubhamispandey"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -174,6 +216,7 @@
                 </li>
                 <li class="header__item col-auto">
                   <a
+                    aria-label="Visit twitter profile"
                     href="https://twitter.com/shubham_057"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -188,13 +231,14 @@
       </div>
       <div class="header_resume">
         <a
+          aria-label="Visit Resume on drive"
           href="https://drive.google.com/file/d/1NqANS4DKaZOlyalH41aM6J9aDRFocb3s/view"
           ><i class="fa-solid fa-circle-chevron-left"></i> View my resume
         </a>
       </div>
     </header>
 
-    <button class="btn btn__contact">
+    <button class="btn btn__contact" aria-label="Contact">
       <span class="scroll__hint scroll__hint--right">contact</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +264,7 @@
       </svg>
     </button>
 
-    <button class="btn btn__about">
+    <button class="btn btn__about" aria-label="About">
       <span class="scroll__hint scroll__hint--left">About</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +294,7 @@
                   <h2>About Me</h2>
                   <div class="row">
                     <div class="profile-image col-3">
-                      <img src="./assets/shubham.svg" alt="" />
+                      <img src="./assets/shubham.webp" alt="" />
                     </div>
                     <div class="col-9">
                       <p>
@@ -503,6 +547,7 @@
                         from Google Cloud
                       </p>
                       <a
+                        aria-label="Visit github project"
                         href="https://github.com/shubhamispandey/React-Travel-Advisory"
                         ><i class="fa-brands fa-github"></i
                       ></a>
@@ -527,7 +572,9 @@
                         CryptoVerse is a free application which shows the latest
                         crypto currency and crypto news
                       </p>
-                      <a href="https://github.com/shubhamispandey/CryptoVerse"
+                      <a
+                        aria-label="Visit github project"
+                        href="https://github.com/shubhamispandey/CryptoVerse"
                         ><i class="fa-brands fa-github"></i
                       ></a>
                     </div>
@@ -549,6 +596,7 @@
                       </div>
                       <p>Search for the weather of different cities</p>
                       <a
+                        aria-label="Visit github project"
                         href="https://github.com/shubhamispandey/React-weather-app"
                         ><i class="fa-brands fa-github"></i
                       ></a>
@@ -574,6 +622,7 @@
                         the nature
                       </p>
                       <a
+                        aria-label="Visit github project"
                         href="https://github.com/shubhamispandey/natoursadvancewebsite"
                         ><i class="fa-brands fa-github"></i
                       ></a>
@@ -595,7 +644,9 @@
                         <h3>Trillo <span>(Hotel Booking)</span></h3>
                       </div>
                       <p>Trillo Project is a Hotel Booking website Design.</p>
-                      <a href="https://github.com/shubhamispandey/trillo"
+                      <a
+                        aria-label="Visit github project"
+                        href="https://github.com/shubhamispandey/trillo"
                         ><i class="fa-brands fa-github"></i
                       ></a>
                     </div>
@@ -616,7 +667,9 @@
                         <h3>Food delivery App</h3>
                       </div>
                       <p>Food delivery design</p>
-                      <a href="https://github.com/shubhamispandey/Food-express"
+                      <a
+                        aria-label="Visit github project"
+                        href="https://github.com/shubhamispandey/Food-express"
                         ><i class="fa-brands fa-github"></i
                       ></a>
                     </div>
@@ -625,6 +678,7 @@
               </li>
             </ul>
             <a
+              aria-label="Visit all projects"
               href="https://github.com/shubhamispandey"
               style="color: lightcoral; font-weight: 600;"
               >View All <i class="fa-solid fa-angle-right"></i
@@ -641,7 +695,11 @@
             <div class="container col-12">
               <div class="footer__title">
                 <h2 class="col-auto">Contact</h2>
-                <button type="button" class="col-auto btn btn__circle">
+                <button
+                  type="button"
+                  aria-label="Close"
+                  class="col-auto btn btn__circle"
+                >
                   <i class="fas fa-times"></i>
                 </button>
               </div>
@@ -706,6 +764,5 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="scroll/index.js" type="module"></script>
   </body>
 </html>

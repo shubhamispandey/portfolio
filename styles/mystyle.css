@@ -51,6 +51,7 @@ form .btn {
       format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 [class^="icon-"],
 [class*=" icon-"] {
