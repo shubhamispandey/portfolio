@@ -40,13 +40,8 @@ form .btn {
 
 @font-face {
   font-family: "icomoon";
-  src: url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.eot?-9haulc");
   src: url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.eot?#iefix-9haulc")
       format("embedded-opentype"),
-    url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.woff?-9haulc")
-      format("woff"),
-    url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.ttf?-9haulc")
-      format("truetype"),
     url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.svg?-9haulc#icomoon")
       format("svg");
   font-weight: normal;
