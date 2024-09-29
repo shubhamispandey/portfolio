@@ -1368,12 +1368,12 @@ body {
     flex-basis: 100%;
     max-width: calc(100% - 40px);
   }
-  .about__courses {
+  /* .about__courses {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: calc(50% - 40px);
     margin: 0 20px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 650px) {
